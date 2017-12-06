@@ -1,30 +1,36 @@
 package com.sexycode.codepractice.fibonacci;
 
-import junit.framework.TestCase;
 
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 /**
  * @author: hzy
  * @since:
  */
 
-public class FibonacciTest extends TestCase {
+public class FibonacciTest {
+
+    @Test
     public void test_1() {
         Solution solution = new Solution();
-        assert 0 == solution.fibonacci(1);
+        assertEquals(0, solution.fibonacci(1));
     }
 
+    @Test
     public void test_2() {
         Solution solution = new Solution();
-        assert 1 == solution.fibonacci(2);
+        assertEquals(1, solution.fibonacci(2));
     }
 
+    @Test
     public void test_3() {
         Solution solution = new Solution();
-        assert 34 == solution.fibonacci(10);
+        assertEquals(34, solution.fibonacci(10));
     }
 
+    @Test
     public void test_4() {
         Solution solution = new Solution();
-        assert 1 == solution.fibonacci(3);
+        assertEquals(1, solution.fibonacci(3));
     }
 }
