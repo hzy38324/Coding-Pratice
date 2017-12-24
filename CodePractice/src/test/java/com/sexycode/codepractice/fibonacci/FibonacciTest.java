@@ -2,7 +2,9 @@ package com.sexycode.codepractice.fibonacci;
 
 
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
+
 /**
  * @author: hzy
  * @since:
