@@ -1,7 +1,5 @@
 package com.sexycode.codepractice.singleton;
 
-import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,17 +16,7 @@ import java.lang.reflect.Method;
  * @since:
  */
 public class SingletonHungryManTest {
-    private SingletonHungryMan sone = null;
-    private Object stwo = null;
-    private Object sthree = null;
     private static Logger logger = LoggerFactory.getLogger(SingletonHungryManTest.class);
-
-    @Before
-    public void setUp() throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException, NoSuchFieldException {
-        sone = SingletonHungryMan.INSTANCE;
-        stwo = createAnotherInstanceUsingRelection();
-        sthree = createAnotherInstanceUsingAnotherClassLoader();
-    }
 
     private Object createAnotherInstanceUsingRelection() throws ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
         Class<SingletonHungryMan> singletonHungryManClass = SingletonHungryMan.class;
@@ -39,7 +27,7 @@ public class SingletonHungryManTest {
 
     private Object createAnotherInstanceUsingAnotherClassLoader() throws ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException {
         // use custom class loader to load class
-        ClassLoader myLoader = getMyLoader();
+        ClassLoader myLoader = createCustomClassLoader();
         Class<?> myClass = myLoader.loadClass("com.sexycode.codepractice.singleton.SingletonHungryMan");
         // use reflection to get field
         Field field = myClass.getField("INSTANCE");
@@ -47,7 +35,7 @@ public class SingletonHungryManTest {
         return field.get(null);
     }
 
-    private ClassLoader getMyLoader() throws ClassNotFoundException {
+    private ClassLoader createCustomClassLoader() throws ClassNotFoundException {
         return new ClassLoader() {
             @Override
             public Class<?> loadClass(String name) throws ClassNotFoundException {
@@ -68,13 +56,21 @@ public class SingletonHungryManTest {
     }
 
     @Test
-    public void testUnique() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
-        logger.info("checking singletons for equality");
+    public void testReflection() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, InstantiationException, ClassNotFoundException {
+        SingletonHungryMan sone = SingletonHungryMan.INSTANCE;
+        Object stwo = createAnotherInstanceUsingRelection();
+
         sone.sayHello();
         invokeMethod(stwo, "sayHello");
-        invokeMethod(sthree, "sayHello");
-        Assert.assertNotEquals(true, sone == stwo);
-        Assert.assertNotEquals(true, sone == sthree);
+    }
+
+    @Test
+    public void testClassLoader() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, InstantiationException, NoSuchFieldException, ClassNotFoundException {
+        SingletonHungryMan sone = SingletonHungryMan.INSTANCE;
+        Object stwo = createAnotherInstanceUsingAnotherClassLoader();
+
+        sone.sayHello();
+        invokeMethod(stwo, "sayHello");
     }
 
     private void invokeMethod(Object obj, String method) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
