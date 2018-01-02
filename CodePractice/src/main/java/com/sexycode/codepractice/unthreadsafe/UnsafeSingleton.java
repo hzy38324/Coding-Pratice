@@ -5,9 +5,13 @@ package com.sexycode.codepractice.unthreadsafe;
  * @since:
  */
 public class UnsafeSingleton {
-    private UnsafeSingleton instance = null;
+    private static UnsafeSingleton instance = null;
 
-    public UnsafeSingleton getInstance() {
+    private UnsafeSingleton() {
+
+    }
+
+    public static UnsafeSingleton getInstance() {
         if (instance == null)
             instance = new UnsafeSingleton();
         return instance;
