@@ -6,8 +6,8 @@ package com.sexycode.codepractice.volatilePractice;
  * @author: hzy created on 2018/02/04
  */
 public class GoalNotifier implements Runnable {
-//    public boolean goal = false;
-    public volatile boolean goal = false;
+    public boolean goal = false;
+//    public volatile boolean goal = false;
 
     public boolean isGoal() {
         return goal;

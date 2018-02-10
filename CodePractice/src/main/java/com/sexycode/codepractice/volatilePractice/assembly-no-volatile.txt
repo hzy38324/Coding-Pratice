@@ -1,0 +1,185 @@
+"C:\Program Files\Java\jdk1.8.0_131\bin\java" -XX:+UnlockDiagnosticVMOptions -Xcomp -XX:+PrintAssembly -XX:CompileCommand=compileonly,*GoalNotifier.setGoal "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2017.2.4\lib\idea_rt.jar=51260:C:\Program Files\JetBrains\IntelliJ IDEA 2017.2.4\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;D:\code\MyWebSite\Coding-Pratice\CodePractice\target\classes;D:\Learn\JAVA\mavenRes\junit\junit\4.12\junit-4.12.jar;D:\Learn\JAVA\mavenRes\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\Learn\JAVA\mavenRes\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;D:\Learn\JAVA\mavenRes\org\slf4j\slf4j-log4j12\1.6.1\slf4j-log4j12-1.6.1.jar;D:\Learn\JAVA\mavenRes\log4j\log4j\1.2.16\log4j-1.2.16.jar;D:\Learn\JAVA\mavenRes\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar" com.sexycode.codepractice.volatilePractice.Game
+CompilerOracle: compileonly *GoalNotifier.setGoal
+Loaded disassembler from C:\Program Files\Java\jdk1.8.0_131\jre\bin\server\hsdis-amd64.dll
+Decoding compiled method 0x00000000030ad4d0:
+Code:
+Argument 0 is unknown.RIP: 0x30ad620 Code size: 0x00000150
+[Disassembling for mach='amd64']
+[Entry Point]
+[Constants]
+  # {method} {0x0000000019a530e0} 'setGoal' '(Z)V' in 'com/sexycode/codepractice/volatilePractice/GoalNotifier'
+  # this:     rdx:rdx   = 'com/sexycode/codepractice/volatilePractice/GoalNotifier'
+  # parm0:    r8        = boolean
+  #           [sp+0x40]  (sp of caller)
+  0x00000000030ad620: mov     r10d,dword ptr [rdx+8h]
+  0x00000000030ad624: shl     r10,3h
+  0x00000000030ad628: cmp     r10,rax
+  0x00000000030ad62b: jne     2fe5f60h          ;   {runtime_call}
+  0x00000000030ad631: nop     word ptr [rax+rax+0h]
+  0x00000000030ad63c: nop
+[Verified Entry Point]
+  0x00000000030ad640: mov     dword ptr [rsp+0ffffffffffffa000h],eax
+  0x00000000030ad647: push    rbp
+  0x00000000030ad648: sub     rsp,30h
+  0x00000000030ad64c: mov     rsi,19a53578h     ;   {metadata(method data for {method} {0x0000000019a530e0} 'setGoal' '(Z)V' in 'com/sexycode/codepractice/volatilePractice/GoalNotifier')}
+  0x00000000030ad656: mov     edi,dword ptr [rsi+0dch]
+  0x00000000030ad65c: add     edi,8h
+  0x00000000030ad65f: mov     dword ptr [rsi+0dch],edi
+  0x00000000030ad665: mov     rsi,19a530d8h     ;   {metadata({method} {0x0000000019a530e0} 'setGoal' '(Z)V' in 'com/sexycode/codepractice/volatilePractice/GoalNotifier')}
+  0x00000000030ad66f: and     edi,0h
+  0x00000000030ad672: cmp     edi,0h
+  0x00000000030ad675: je      30ad68fh          ;*aload_0
+                                                ; - com.sexycode.codepractice.volatilePractice.GoalNotifier::setGoal@0 (line 17)
+
+  0x00000000030ad67b: and     r8d,1h
+  0x00000000030ad67f: mov     byte ptr [rdx+0ch],r8l  ;*putfield goal
+                                                ; - com.sexycode.codepractice.volatilePractice.GoalNotifier::setGoal@2 (line 17)
+
+  0x00000000030ad683: add     rsp,30h
+  0x00000000030ad687: pop     rbp
+  0x00000000030ad688: test    dword ptr [0fb0100h],eax
+                                                ;   {poll_return}
+  0x00000000030ad68e: ret
+  0x00000000030ad68f: mov     qword ptr [rsp+8h],rsi
+  0x00000000030ad694: mov     qword ptr [rsp],0ffffffffffffffffh
+  0x00000000030ad69c: call    30a27a0h          ; OopMap{rdx=Oop off=129}
+                                                ;*synchronization entry
+                                                ; - com.sexycode.codepractice.volatilePractice.GoalNotifier::setGoal@-1 (line 17)
+                                                ;   {runtime_call}
+  0x00000000030ad6a1: jmp     30ad67bh
+  0x00000000030ad6a3: nop
+  0x00000000030ad6a4: nop
+  0x00000000030ad6a5: mov     rax,qword ptr [r15+2a8h]
+  0x00000000030ad6ac: mov     r10,0h
+  0x00000000030ad6b6: mov     qword ptr [r15+2a8h],r10
+  0x00000000030ad6bd: mov     r10,0h
+  0x00000000030ad6c7: mov     qword ptr [r15+2b0h],r10
+  0x00000000030ad6ce: add     rsp,30h
+  0x00000000030ad6d2: pop     rbp
+  0x00000000030ad6d3: jmp     30113a0h          ;   {runtime_call}
+  0x00000000030ad6d8: hlt
+  0x00000000030ad6d9: hlt
+  0x00000000030ad6da: hlt
+  0x00000000030ad6db: hlt
+  0x00000000030ad6dc: hlt
+  0x00000000030ad6dd: hlt
+  0x00000000030ad6de: hlt
+  0x00000000030ad6df: hlt
+[Exception Handler]
+[Stub Code]
+  0x00000000030ad6e0: call    309ff60h          ;   {no_reloc}
+  0x00000000030ad6e5: mov     qword ptr [rsp+0ffffffffffffffd8h],rsp
+  0x00000000030ad6ea: sub     rsp,80h
+  0x00000000030ad6f1: mov     qword ptr [rsp+78h],rax
+  0x00000000030ad6f6: mov     qword ptr [rsp+70h],rcx
+  0x00000000030ad6fb: mov     qword ptr [rsp+68h],rdx
+  0x00000000030ad700: mov     qword ptr [rsp+60h],rbx
+  0x00000000030ad705: mov     qword ptr [rsp+50h],rbp
+  0x00000000030ad70a: mov     qword ptr [rsp+48h],rsi
+  0x00000000030ad70f: mov     qword ptr [rsp+40h],rdi
+  0x00000000030ad714: mov     qword ptr [rsp+38h],r8
+  0x00000000030ad719: mov     qword ptr [rsp+30h],r9
+  0x00000000030ad71e: mov     qword ptr [rsp+28h],r10
+  0x00000000030ad723: mov     qword ptr [rsp+20h],r11
+  0x00000000030ad728: mov     qword ptr [rsp+18h],r12
+  0x00000000030ad72d: mov     qword ptr [rsp+10h],r13
+  0x00000000030ad732: mov     qword ptr [rsp+8h],r14
+  0x00000000030ad737: mov     qword ptr [rsp],r15
+  0x00000000030ad73b: mov     rcx,6e088e30h     ;   {external_word}
+  0x00000000030ad745: mov     rdx,30ad6e5h      ;   {internal_word}
+  0x00000000030ad74f: mov     r8,rsp
+  0x00000000030ad752: and     rsp,0fffffffffffffff0h
+  0x00000000030ad756: call    6dd43d40h         ;   {runtime_call}
+  0x00000000030ad75b: hlt
+[Deopt Handler Code]
+  0x00000000030ad75c: mov     r10,30ad75ch      ;   {section_word}
+  0x00000000030ad766: push    r10
+  0x00000000030ad768: jmp     2fe7600h          ;   {runtime_call}
+  0x00000000030ad76d: hlt
+  0x00000000030ad76e: hlt
+  0x00000000030ad76f: hlt
+Decoding compiled method 0x00000000030ad810:
+Code:
+Argument 0 is unknown.RIP: 0x30ad960 Code size: 0x00000110
+[Entry Point]
+[Constants]
+  # {method} {0x0000000019a530e0} 'setGoal' '(Z)V' in 'com/sexycode/codepractice/volatilePractice/GoalNotifier'
+  # this:     rdx:rdx   = 'com/sexycode/codepractice/volatilePractice/GoalNotifier'
+  # parm0:    r8        = boolean
+  #           [sp+0x40]  (sp of caller)
+  0x00000000030ad960: mov     r10d,dword ptr [rdx+8h]
+  0x00000000030ad964: shl     r10,3h
+  0x00000000030ad968: cmp     r10,rax
+  0x00000000030ad96b: jne     2fe5f60h          ;   {runtime_call}
+  0x00000000030ad971: nop     word ptr [rax+rax+0h]
+  0x00000000030ad97c: nop
+[Verified Entry Point]
+  0x00000000030ad980: mov     dword ptr [rsp+0ffffffffffffa000h],eax
+  0x00000000030ad987: push    rbp
+  0x00000000030ad988: sub     rsp,30h           ;*aload_0
+                                                ; - com.sexycode.codepractice.volatilePractice.GoalNotifier::setGoal@0 (line 17)
+
+  0x00000000030ad98c: and     r8d,1h
+  0x00000000030ad990: mov     byte ptr [rdx+0ch],r8l  ;*putfield goal
+                                                ; - com.sexycode.codepractice.volatilePractice.GoalNotifier::setGoal@2 (line 17)
+
+  0x00000000030ad994: add     rsp,30h
+  0x00000000030ad998: pop     rbp
+  0x00000000030ad999: test    dword ptr [0fb0100h],eax
+                                                ;   {poll_return}
+  0x00000000030ad99f: ret
+  0x00000000030ad9a0: nop
+  0x00000000030ad9a1: nop
+  0x00000000030ad9a2: mov     rax,qword ptr [r15+2a8h]
+  0x00000000030ad9a9: mov     r10,0h
+  0x00000000030ad9b3: mov     qword ptr [r15+2a8h],r10
+  0x00000000030ad9ba: mov     r10,0h
+  0x00000000030ad9c4: mov     qword ptr [r15+2b0h],r10
+  0x00000000030ad9cb: add     rsp,30h
+  0x00000000030ad9cf: pop     rbp
+  0x00000000030ad9d0: jmp     30113a0h          ;   {runtime_call}
+  0x00000000030ad9d5: hlt
+  0x00000000030ad9d6: hlt
+  0x00000000030ad9d7: hlt
+  0x00000000030ad9d8: hlt
+  0x00000000030ad9d9: hlt
+  0x00000000030ad9da: hlt
+  0x00000000030ad9db: hlt
+  0x00000000030ad9dc: hlt
+  0x00000000030ad9dd: hlt
+  0x00000000030ad9de: hlt
+  0x00000000030ad9df: hlt
+[Exception Handler]
+[Stub Code]
+  0x00000000030ad9e0: call    309ff60h          ;   {no_reloc}
+  0x00000000030ad9e5: mov     qword ptr [rsp+0ffffffffffffffd8h],rsp
+  0x00000000030ad9ea: sub     rsp,80h
+  0x00000000030ad9f1: mov     qword ptr [rsp+78h],rax
+  0x00000000030ad9f6: mov     qword ptr [rsp+70h],rcx
+  0x00000000030ad9fb: mov     qword ptr [rsp+68h],rdx
+  0x00000000030ada00: mov     qword ptr [rsp+60h],rbx
+  0x00000000030ada05: mov     qword ptr [rsp+50h],rbp
+  0x00000000030ada0a: mov     qword ptr [rsp+48h],rsi
+  0x00000000030ada0f: mov     qword ptr [rsp+40h],rdi
+  0x00000000030ada14: mov     qword ptr [rsp+38h],r8
+  0x00000000030ada19: mov     qword ptr [rsp+30h],r9
+  0x00000000030ada1e: mov     qword ptr [rsp+28h],r10
+  0x00000000030ada23: mov     qword ptr [rsp+20h],r11
+  0x00000000030ada28: mov     qword ptr [rsp+18h],r12
+  0x00000000030ada2d: mov     qword ptr [rsp+10h],r13
+  0x00000000030ada32: mov     qword ptr [rsp+8h],r14
+  0x00000000030ada37: mov     qword ptr [rsp],r15
+  0x00000000030ada3b: mov     rcx,6e088e30h     ;   {external_word}
+  0x00000000030ada45: mov     rdx,30ad9e5h      ;   {internal_word}
+  0x00000000030ada4f: mov     r8,rsp
+  0x00000000030ada52: and     rsp,0fffffffffffffff0h
+  0x00000000030ada56: call    6dd43d40h         ;   {runtime_call}
+  0x00000000030ada5b: hlt
+[Deopt Handler Code]
+  0x00000000030ada5c: mov     r10,30ada5ch      ;   {section_word}
+  0x00000000030ada66: push    r10
+  0x00000000030ada68: jmp     2fe7600h          ;   {runtime_call}
+  0x00000000030ada6d: hlt
+  0x00000000030ada6e: hlt
+  0x00000000030ada6f: hlt
+Goal !!!!!!
