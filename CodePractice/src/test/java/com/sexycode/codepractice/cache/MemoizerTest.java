@@ -12,24 +12,24 @@ import static org.junit.Assert.assertTrue;
  */
 public class MemoizerTest {
     @Test
-    public void test_Memozier1() throws InterruptedException {
+    public void test_Memozier1() throws Exception {
         Computable computer = new Memoizer1(new UserCostStatComputer());
         doTest(computer);
     }
 
     @Test
-    public void test_Memozier2() throws InterruptedException {
+    public void test_Memozier2() throws Exception {
         Computable computer = new Memoizer2(new UserCostStatComputer());
         doTest(computer);
     }
 
     @Test
-    public void test_Memozier() throws InterruptedException {
+    public void test_Memozier() throws Exception {
         Computable computer = new Memoizer(new UserCostStatComputer());
         doTest(computer);
     }
 
-    private void doTest(Computable computer) throws InterruptedException {
+    private void doTest(Computable computer) throws Exception {
         long time1 = System.currentTimeMillis();
         computer.compute("1");
         long time2 = System.currentTimeMillis();

@@ -16,7 +16,7 @@ public class Memoizer1<A, V> implements Computable<A, V> {
         this.c = c;
     }
 
-    public synchronized V compute(A arg) throws InterruptedException {
+    public synchronized V compute(A arg) throws Exception {
         V result = cache.get(arg);
         if (result == null) {
             result = c.compute(arg);

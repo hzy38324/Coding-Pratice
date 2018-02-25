@@ -18,7 +18,7 @@ public class Memoizer2<A, V> implements Computable<A, V> {
         this.c = c;
     }
 
-    public V compute(A arg) throws InterruptedException {
+    public V compute(A arg) throws Exception {
         V result = cache.get(arg);
         if (result == null) {
             result = c.compute(arg);

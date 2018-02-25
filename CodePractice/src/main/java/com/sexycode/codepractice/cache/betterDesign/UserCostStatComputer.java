@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class UserCostStatComputer implements Computable<String, BigInteger> {
     @Override
-    public BigInteger compute(String userId) throws InterruptedException {
+    public BigInteger compute(String userId) throws Exception {
         // assume there is a long time compute...
         TimeUnit.SECONDS.sleep(3);
         return new BigInteger(userId);
