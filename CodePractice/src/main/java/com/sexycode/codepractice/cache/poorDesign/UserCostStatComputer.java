@@ -23,7 +23,7 @@ public class UserCostStatComputer {
     }
 
     private BigInteger doCompute(String userId) throws InterruptedException {
-        // assume there is a long time compute...
+        // assume it cost a long time...
         TimeUnit.SECONDS.sleep(3);
         return new BigInteger(userId);
     }
