@@ -9,8 +9,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public interface HtmlRender {
-    Logger logger = LoggerFactory.getLogger(HtmlRender.class);
+public interface HtmlRenderer {
+    Logger logger = LoggerFactory.getLogger(HtmlRenderer.class);
     int DEFAULT_ELE_NUM = 5;
 
     void renderPage(String source) throws Exception;

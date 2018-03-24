@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author: hzy created on 2018/03/13
  */
-public class SingleThreadRenderer implements HtmlRender {
+public class SingleThreadRenderer implements HtmlRenderer {
 
     public void renderPage(String source) throws Exception {
         renderText(source);

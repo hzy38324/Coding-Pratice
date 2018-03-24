@@ -11,7 +11,7 @@ import java.util.concurrent.*;
  *
  * @author: hzy created on 2018/03/13
  */
-public class CompletionServiceRenderer implements HtmlRender {
+public class CompletionServiceRenderer implements HtmlRenderer {
     private final ExecutorService executor = Executors.newCachedThreadPool();
 
     public void renderPage(String source) throws Exception {
