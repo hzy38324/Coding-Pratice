@@ -12,4 +12,6 @@ public class ioTest {
     public void test1(){
     }
 
+    public  final static void aaa(){}
+
 }

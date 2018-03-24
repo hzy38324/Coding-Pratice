@@ -20,4 +20,11 @@
         <property name="title"/>
     </class>
 
+    <class name="Book" table="BOOK">
+        <id name="id" column="BOOK_ID">
+            <generator class="increment"/>
+        </id>
+        <property name="name"/>
+    </class>
+
 </hibernate-mapping>
