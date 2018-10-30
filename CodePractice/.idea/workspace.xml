@@ -23,11 +23,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="CountDownLatchDemo.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CountDownLatchDemo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sexycode/codepractice/concurrency/aqs/CountDownLatchDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1002">
-              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <state relative-caret-position="183">
+              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -43,17 +43,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OneShotLatch.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OneShotLatch.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sexycode/codepractice/concurrency/aqs/OneShotLatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-              <folding>
-                <element signature="e#410#411#0" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-                <element signature="e#688#689#0" expanded="true" />
-                <element signature="e#760#761#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="313">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,7 +56,7 @@
       <file leaf-file-name="CountDownLatch.java" pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/concurrent/CountDownLatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
+            <state relative-caret-position="2318">
               <caret line="155" column="13" lean-forward="false" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
               <folding />
             </state>
@@ -71,8 +66,8 @@
       <file leaf-file-name="AbstractQueuedSynchronizer.java" pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="1129" column="54" lean-forward="true" selection-start-line="1129" selection-start-column="54" selection-end-line="1129" selection-end-column="54" />
+            <state relative-caret-position="20520">
+              <caret line="1129" column="54" lean-forward="false" selection-start-line="1129" selection-start-column="54" selection-end-line="1129" selection-end-column="54" />
               <folding>
                 <element signature="e#44444#44445#0" expanded="true" />
                 <element signature="e#44501#44502#0" expanded="true" />
@@ -1123,7 +1118,8 @@
       <workItem from="1521188411898" duration="20312000" />
       <workItem from="1534763674513" duration="3434000" />
       <workItem from="1540460018470" duration="3581000" />
-      <workItem from="1540697515669" duration="1221000" />
+      <workItem from="1540697515669" duration="1415000" />
+      <workItem from="1540899014112" duration="57000" />
     </task>
     <servers />
   </component>
@@ -1160,7 +1156,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128123000" />
+    <option name="totallyTimeSpent" value="128374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
@@ -1169,13 +1165,12 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.0828125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27945206" sideWeight="0.9171875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27945206" sideWeight="0.9171875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1193,6 +1188,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40838853" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1448,11 +1444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2007#2008#0" expanded="false" />
-            <element signature="e#2051#2052#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1460,11 +1451,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2356">
           <caret line="159" column="19" lean-forward="false" selection-start-line="159" selection-start-column="19" selection-end-line="159" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#16583#0" expanded="false" />
-            <element signature="e#5279#5280#0" expanded="false" />
-            <element signature="e#5320#5321#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1472,13 +1458,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="97" column="7" lean-forward="false" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/concurrent/CountDownLatch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
+        <state relative-caret-position="2318">
           <caret line="155" column="13" lean-forward="false" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
           <folding />
         </state>
@@ -1486,20 +1471,12 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="1129" column="54" lean-forward="true" selection-start-line="1129" selection-start-column="54" selection-end-line="1129" selection-end-column="54" />
+        <state relative-caret-position="20520">
+          <caret line="1129" column="54" lean-forward="false" selection-start-line="1129" selection-start-column="54" selection-end-line="1129" selection-end-column="54" />
           <folding>
             <element signature="e#44444#44445#0" expanded="true" />
             <element signature="e#44501#44502#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sexycode/codepractice/concurrency/aqs/CountDownLatchDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1002">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1513,14 +1490,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sexycode/codepractice/concurrency/aqs/OneShotLatch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-          <folding>
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="313">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sexycode/codepractice/concurrency/aqs/CountDownLatchDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
