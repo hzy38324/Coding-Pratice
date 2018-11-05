@@ -5,10 +5,6 @@ package com.sexycode.codepractice.concurrency.aqs;
  * Time 2018/10/25 下午5:35
  * Desc
  */
-// Java Program to demonstrate how
-// to use CountDownLatch, Its used
-// when a thread needs to wait for other
-// threads before starting its work.
 
 import java.util.concurrent.CountDownLatch;
 

@@ -40,7 +40,7 @@ public class Memoizer <A, V> implements Computable<A, V> {
             try {
                 return f.get();
             } catch (CancellationException e) {
-                // remove cache and go into next loop to retry
+                // take cache and go into next loop to retry
                 cache.remove(arg, f);
             } catch (ExecutionException e) {
                 // throw it and then end
