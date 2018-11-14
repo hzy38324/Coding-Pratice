@@ -11,6 +11,9 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class TestCondition {
 
+    static boolean CONDITION_SWITCH = false;
+
+
     public static void main(String[] args) {
 
         final ReentrantLock reentrantLock = new ReentrantLock();
@@ -23,19 +26,29 @@ public class TestCondition {
 
             System.out.println(Thread.currentThread().getName() + "拿到锁了");
 
-            System.out.println(Thread.currentThread().getName() + "等待信号");
+            if (CONDITION_SWITCH) {
 
-            try {
+                System.out.println(Thread.currentThread().getName() + "等待信号");
 
-                condition.await();
+                try {
 
-            } catch (InterruptedException e) {
+                    condition.await();
 
-                e.printStackTrace();
+                } catch (InterruptedException e) {
 
+                    e.printStackTrace();
+
+                }
+
+                System.out.println(Thread.currentThread().getName() + "拿到信号");
+            }else {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
 
-            System.out.println(Thread.currentThread().getName() + "拿到信号");
 
             reentrantLock.unlock();
 
@@ -49,19 +62,30 @@ public class TestCondition {
 
             System.out.println(Thread.currentThread().getName() + "拿到锁了");
 
-            try {
+            if (CONDITION_SWITCH) {
+                try {
 
-                Thread.sleep(3000);
+                    Thread.sleep(3000);
 
-            } catch (InterruptedException e) {
+                } catch (InterruptedException e) {
 
-                e.printStackTrace();
+                    e.printStackTrace();
 
+                }
+
+
+                System.out.println(Thread.currentThread().getName() + "发出信号");
+
+                condition.signal();
+
+                try {
+                    Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
 
-            System.out.println(Thread.currentThread().getName() + "发出信号");
 
-            condition.signal();
 
             reentrantLock.unlock();
 
